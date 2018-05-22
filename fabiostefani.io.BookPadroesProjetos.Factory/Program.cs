@@ -1,4 +1,6 @@
-﻿using System;
+﻿using fabiostefani.io.BookPadroesProjetos.Factory.Enums;
+using fabiostefani.io.BookPadroesProjetos.Factory.Factory;
+using System;
 
 namespace fabiostefani.io.BookPadroesProjetos.Factory
 {
@@ -6,7 +8,7 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new PizzaStore(new SimplePizzaFactory()).OrderPizza(EnumTypePizza.Veggies);
 
             Console.ReadKey();
         }
