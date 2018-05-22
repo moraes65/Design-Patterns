@@ -9,7 +9,7 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory
         static void Main(string[] args)
         {
             new PizzaStore(new SimplePizzaFactory()).OrderPizza(EnumTypePizza.Veggies);
-
+            Console.WriteLine("tste");
             Console.ReadKey();
         }
     }
