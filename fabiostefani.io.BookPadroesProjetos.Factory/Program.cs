@@ -1,5 +1,6 @@
 ﻿using fabiostefani.io.BookPadroesProjetos.Factory.Enums;
 using fabiostefani.io.BookPadroesProjetos.Factory.Factory;
+using fabiostefani.io.BookPadroesProjetos.Factory.Store;
 using System;
 
 namespace fabiostefani.io.BookPadroesProjetos.Factory
@@ -8,8 +9,10 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory
     {
         static void Main(string[] args)
         {
-            new PizzaStore(new SimplePizzaFactory()).OrderPizza(EnumTypePizza.Veggies);
-            Console.WriteLine("tste");
+            new ChicagoStylePizzaStore().OrderPizza(EnumTypePizza.Cheese);
+            new NewYorkStylePizzaStore().OrderPizza(EnumTypePizza.Cheese);
+            //new CaliforniaStylePizzaStore().OrderPizza(EnumTypePizza.Pepperoni);
+            //Console.WriteLine("tste");
             Console.ReadKey();
         }
     }

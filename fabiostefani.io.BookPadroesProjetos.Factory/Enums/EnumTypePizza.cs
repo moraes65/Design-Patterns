@@ -2,10 +2,10 @@
 {
     public enum EnumTypePizza
     {
-        Cheese,
-        Greek,
-        Pepperoni,
-        Clam,
-        Veggies
+        Cheese = 1,
+        Greek = 2,
+        Pepperoni = 3,
+        Clam = 4,
+        Veggies = 5
     }
 }

@@ -7,16 +7,13 @@ using System.Text;
 
 namespace fabiostefani.io.BookPadroesProjetos.Factory
 {
-    public class PizzaStore
+    public abstract class PizzaStore
     {
-        private readonly SimplePizzaFactory _factory;
-        public PizzaStore(SimplePizzaFactory factory)
-        {
-            _factory = factory;
-        }
+        public abstract Pizza CreatePizza(EnumTypePizza type);
+
         public Pizza OrderPizza(EnumTypePizza type)
         {
-            var pizza = _factory.CreatePizza(type);
+            var pizza = CreatePizza(type);
 
             pizza.Prepare();
             pizza.Bake();

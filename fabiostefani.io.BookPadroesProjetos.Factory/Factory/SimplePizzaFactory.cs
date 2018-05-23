@@ -20,13 +20,13 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory.Factory
                 //    pizza = new GreekPizza();
                 //    break;
                 case EnumTypePizza.Pepperoni:
-                    pizza = new PepperoniPizza();
+                    pizza = new NewYorkStylePepperoniPizza();
                     break;
                 case EnumTypePizza.Clam:
-                    pizza = new ClamPizza();
+                    pizza = new NewYorkStyleClamPizza();
                     break;
                 case EnumTypePizza.Veggies:
-                    pizza = new VeggiesPizza();
+                    pizza = new NewYorkStyleVeggiesPizza();
                     break;
                 default:
                     throw new ApplicationException($"Tipo {type} não preparado.");
