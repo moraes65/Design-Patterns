@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using fabiostefani.io.BookPadroesProjetos.Factory.Enums;
+using fabiostefani.io.BookPadroesProjetos.Factory.Ingredients.Factory;
 using fabiostefani.io.BookPadroesProjetos.Factory.Models;
 
 namespace fabiostefani.io.BookPadroesProjetos.Factory.Store
@@ -10,21 +11,34 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory.Store
     {
         public override Pizza CreatePizza(EnumTypePizza type)
         {
+            Pizza pizza = null;
+            IPizzaIngredientFactory ingredientFactory = new NewYorkPizzaIngredientFactory();
             switch (type)
             {
                 case EnumTypePizza.Cheese:
-                    return new NewYorkStyleCheesePizza();                    
+                    pizza = new CheesePizza(ingredientFactory);
+                    pizza.Name = nameof(CheesePizza);
+                    break;
                 case EnumTypePizza.Greek:
-                    return new NewYorkStyleGreekPizza();                    
+                    pizza = new GreekPizza(ingredientFactory);
+                    pizza.Name = nameof(GreekPizza);
+                    break;
                 case EnumTypePizza.Pepperoni:
-                    return new NewYorkStylePepperoniPizza();                    
+                    pizza = new PepperoniPizza(ingredientFactory);
+                    pizza.Name = nameof(PepperoniPizza);
+                    break;
                 case EnumTypePizza.Clam:
-                    return new NewYorkStyleClamPizza();                    
+                    pizza = new ClamPizza(ingredientFactory);
+                    pizza.Name = nameof(ClamPizza);
+                    break;
                 case EnumTypePizza.Veggies:
-                    return new NewYorkStyleVeggiesPizza();                    
+                    pizza = new VeggiesPizza(ingredientFactory);
+                    pizza.Name = nameof(VeggiesPizza);
+                    break;
                 default:
                     throw new ApplicationException($"Type {type} not implemented.");
             }
+            return pizza;
         }
     }
 }

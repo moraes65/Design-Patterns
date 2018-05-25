@@ -1,5 +1,4 @@
 ﻿using fabiostefani.io.BookPadroesProjetos.Factory.Enums;
-using fabiostefani.io.BookPadroesProjetos.Factory.Factory;
 using fabiostefani.io.BookPadroesProjetos.Factory.Models;
 using System;
 using System.Collections.Generic;

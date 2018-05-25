@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fabiostefani.io.BookPadroesProjetos.Factory.Ingredients.Interface;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,22 +8,16 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory.Models
     public abstract class Pizza
     {        
         public string Name { get; set; }
-        public string Dough { get; set; }
-        public string Sauce { get; set; }
-        public List<PizzaTopping> Toppings { get; private set; }
+        public IDough Dough { get; set; }
+        public ISauce Sauce { get; set; }
+        public IList<IVeggies> Veggies { get; set; }
+        public ICheese Cheese { get; set; }
+        public IPepperoni Pepperoni { get; set; }
+        public IClam Clam { get; set; }
 
 
-        public virtual void Prepare()
-        {
-            Console.WriteLine($"Preparing {Name}");
-            Console.WriteLine("Tossing dough...");
-            Console.WriteLine("Adding sauce...");
-            Console.WriteLine("Adding toppings:");
-            foreach (var item in Toppings)
-            {
-                Console.WriteLine("    " + item.Name);
-            }
-        }
+        public abstract void Prepare();
+        
 
         public virtual void Bake()
         {
@@ -44,11 +39,11 @@ namespace fabiostefani.io.BookPadroesProjetos.Factory.Models
             return Name;
         }
 
-        public void AddTooping(string name)
-        {
-            Toppings = Toppings ?? new List<PizzaTopping>();
+        //public void AddTooping(IVeggies name)
+        //{
+        //    Toppings = Toppings ?? new List<IVeggies>();
 
-            Toppings.Add(new PizzaTopping(name));
-        }
+        //    Toppings.Add(name);
+        //}
     }
 }
