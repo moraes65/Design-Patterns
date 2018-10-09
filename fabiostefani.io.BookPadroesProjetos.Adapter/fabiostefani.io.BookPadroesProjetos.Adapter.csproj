@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Adapters\DuckAdapter.cs" />
     <Compile Include="Adapters\TurkeyAdapter.cs" />
-    <Compile Include="Ducks\ITurkey.cs" />
+    <Compile Include="Interfaces\ITurkey.cs" />
     <Compile Include="Ducks\MallardDuck.cs" />
     <Compile Include="Interfaces\IDuck.cs" />
     <Compile Include="Program.cs" />
