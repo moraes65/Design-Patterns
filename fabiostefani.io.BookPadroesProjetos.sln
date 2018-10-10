@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fabiostefani.io.BookPadroes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fabiostefani.io.BookPadroesProjetos.Adapter", "fabiostefani.io.BookPadroesProjetos.Adapter\fabiostefani.io.BookPadroesProjetos.Adapter.csproj", "{02816F4E-7216-4A77-BA97-2BB003D962D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fabiostefani.io.BookPadroesProjetos.Facade", "fabiostefani.io.BookPadroesProjetos.Facade\fabiostefani.io.BookPadroesProjetos.Facade.csproj", "{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{02816F4E-7216-4A77-BA97-2BB003D962D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02816F4E-7216-4A77-BA97-2BB003D962D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02816F4E-7216-4A77-BA97-2BB003D962D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

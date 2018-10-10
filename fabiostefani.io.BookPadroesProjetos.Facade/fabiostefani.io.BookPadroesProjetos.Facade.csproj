@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>fabiostefani.io.BookPadroesProjetos.Facade</RootNamespace>
+    <AssemblyName>fabiostefani.io.BookPadroesProjetos.Facade</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Amplificador.cs" />
+    <Compile Include="Classes\Sintonizador.cs" />
+    <Compile Include="Classes\CdPlayer.cs" />
+    <Compile Include="Classes\DvdPlayer.cs" />
+    <Compile Include="Classes\Projetor.cs" />
+    <Compile Include="Classes\Tela.cs" />
+    <Compile Include="Classes\MaquinaPipoca.cs" />
+    <Compile Include="Classes\LuzAmbiente.cs" />
+    <Compile Include="HomeTheaterFacade.cs" />
+    <Compile Include="Interface\IAmplificador.cs" />
+    <Compile Include="Interface\ICdPlayer.cs" />
+    <Compile Include="Interface\IDvdPlayer.cs" />
+    <Compile Include="Interface\ILuzAmbiente.cs" />
+    <Compile Include="Interface\IMaquinaPipoca.cs" />
+    <Compile Include="Interface\IProjetor.cs" />
+    <Compile Include="Interface\ISintonizador.cs" />
+    <Compile Include="Interface\ITela.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
