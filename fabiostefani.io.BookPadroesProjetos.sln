@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fabiostefani.io.BookPadroesProjetos.Factory", "fabiostefani.io.BookPadroesProjetos.Factory\fabiostefani.io.BookPadroesProjetos.Factory.csproj", "{21CEC8C6-9118-4D15-8C06-DC97E187EA29}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fabiostefani.io.BookPadroesProjetos.Facade", "fabiostefani.io.BookPadroesProjetos.Facade\fabiostefani.io.BookPadroesProjetos.Facade.csproj", "{BD017A9C-F2E6-495A-99F1-4B47BDD8DA57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fabiostefani.io.BookPadroesProjetos.Command", "fabiostefani.io.BookPadroesProjetos.Command\fabiostefani.io.BookPadroesProjetos.Command.csproj", "{0618BD6B-DC0E-4D66-9AF1-FAA323708577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fabiostefani.io.BookPadroesProjetos.Patterns", "fabiostefani.io.BookPadroesProjetos.Patterns\fabiostefani.io.BookPadroesProjetos.Patterns.csproj", "{86F298AE-8120-44B9-967C-AA88FD6E61EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0618BD6B-DC0E-4D66-9AF1-FAA323708577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0618BD6B-DC0E-4D66-9AF1-FAA323708577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0618BD6B-DC0E-4D66-9AF1-FAA323708577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F298AE-8120-44B9-967C-AA88FD6E61EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F298AE-8120-44B9-967C-AA88FD6E61EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F298AE-8120-44B9-967C-AA88FD6E61EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F298AE-8120-44B9-967C-AA88FD6E61EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
